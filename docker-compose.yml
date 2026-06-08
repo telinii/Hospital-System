@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    container_name: filahospital_web
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app            # mount source for dev; removes need to rebuild for code changes
+      - ./data:/app/data  # persist DB and any generated files (SQLite location)
+    environment:
+      - PYTHONUNBUFFERED=1
+      - FILAHOSPITAL_DB=/app/data/filahospital.db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
