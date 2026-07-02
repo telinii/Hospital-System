@@ -6,7 +6,7 @@ Pré-requisitos
 
 Passos para rodar localmente
 1. Abra um terminal e vá para a pasta do projeto:
-   cd /home/scrowl/filahospital
+   cd /home/seu_usuario/filahospital
 
 2. Crie e ative um virtualenv (recomendado):
    python3 -m venv venv
