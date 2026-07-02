@@ -34,10 +34,3 @@ Testes rápidos (exemplos curl)
 Observações para iniciantes
 - O protótipo usa um banco SQLite local (filahospital.db). O arquivo e as tabelas são criados automaticamente na primeira execução.
 - Para evoluir o projeto: adicionar autenticação, migrações com Alembic, testes automatizados e Docker/Helm para deploy.
-
-Se quiser, eu posso:
-- Gerar um Dockerfile e docker-compose para rodar facilmente
-- Adicionar autenticação simples (login JWT)
-- Gerar scripts de migração Alembic
-
-Diga qual próximo passo prefere e eu guio você passo a passo.
